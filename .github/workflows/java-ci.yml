@@ -23,4 +23,4 @@ jobs:
       run: javac parser.java
 
     - name: Run Java program
-      run: java parser < test.see
+      run: java parser < test.see | grep 'Parsing succeeded'
